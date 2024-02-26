@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
 <div>
@@ -12,9 +13,10 @@
             <div>
                 <h1>SimpleLocalize.io ⚡️ Cloudflare Workers</h1>
                 <p data-i18n-key="use_buttons_below">Use buttons below to switch between languages</p>
-                <button data-i18n-key="language.english">English</button>
-                <button data-i18n-key="language.spanish">Spanish</button>
-                <button data-i18n-key="language.polish">Polish</button>
+                <a class="btn btn-primary" href="?lang=en" data-i18n-key="language.english">English</a>
+                <a class="btn btn-primary" href="?lang=es" data-i18n-key="language.spanish">Spanish</a>
+                <a class="btn btn-primary" href="?lang=pl" data-i18n-key="language.polish">Polish</a>
+                <h3 class="mt-3" data-i18n-key="hello_world">Hello World</h3>
                 <hr>
             </div>
             <img src="logo.svg" class="App-logo" alt="simplelocalize with i18next">
