@@ -1,0 +1,32 @@
+# Common
+apiKey: YOUR_API_KEY
+
+#################################
+# 'simplelocalize upload' command
+#################################
+
+# Upload path is a path to a file(s) with translations. Use {lang} placeholder to specify language or locale and {ns} placeholder to specify namespace.
+# For example, if you have translations in 2 languages and 2 namespaces, you can use the following path: ./src/translations/{lang}/{ns}.json.
+# Add '--dryRun' parameter to check what translation files will be uploaded without actually uploading them.
+uploadPath: ./extraction.json
+
+# Upload format is a format of the file(s) with translations.
+# Supported formats: https://simplelocalize.io/docs/general/file-formats/
+uploadFormat: simplelocalize-json
+
+# Upload options are options that are passed to the upload command.
+# Supported options: https://simplelocalize.io/docs/general/options/
+uploadOptions:
+#  - 'REPLACE_TRANSLATION_IF_FOUND' # overwrite translation for given a key and namespace if found
+
+
+##################################
+# 'simplelocalize extract' command
+##################################
+
+# Extract path is a path to a directory with application source code.
+searchDir: ./public
+
+# Project type is a type of the project. It is used to extract i18n keys from the source code.
+# Supported project types: https://simplelocalize.io/docs/cli/i18n-keys-extraction/
+projectType: simplelocalize/data-i18n-key

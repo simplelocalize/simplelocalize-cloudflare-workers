@@ -1,0 +1,7 @@
+name = "simplelocalize-i18n"
+main = "src/index.js"
+compatibility_date = "2024-02-26"
+workers_dev = true
+
+[site]
+bucket = "./public"
